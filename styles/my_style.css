@@ -1,25 +1,67 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family:'Open Sans', sans-serif;
+}
+
 body{
-	background-color: #222222;
-	color: #666666;
-	font-family: verdana;
-	font-size: 10px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #060a1f;
+	background-image: url("../images/daylight.png");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 }
 
-#woonkamer {
+#clock {
+	background-color:#110E21;
+	padding: 20px 50px 50px;
+	border-radius: 25px;
+}
+
+#clock img {
+	width:360px;
+}
+
+#clock h2 {
 	position: relative;
-	width: 800px;
-	height: 574px;
-	background-color: #333333;
-	overflow: hidden;
+	display:block;
+	color:#fff;
+	text-align: center;
+	margin: 10px 0 20px 0;;
+	font-size: 126%;
+    font-weight: 100;
+    font-family: 'Montserrat';
 }
 
-#gerrit	 {
-	top: 360px;
-	left: 20px;
-	width: 200px;
-	height: 164px;
+#year {
+	font-family: 'pirulen';
+    padding-top: 8px;
+    font-size: 30pt;
+
 }
 
-img {
-	position: absolute;
+#clock #time {
+	display:flex;
+	justify-content: center;
+
+}
+
+#clock #time div {
+	position:relative;
+	margin:0 5px;
+	display:block;
+	width:100px;
+	height:80px;
+	background:rgb(109, 91, 213);
+	color: #fff;
+	font-family: 'pirulen';
+	font-size: 25pt;	
+	display:flex;
+	justify-content: center;
+	align-items: center;
 }

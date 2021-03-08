@@ -2,16 +2,21 @@
 <html lang="nl">
 	<head>
 		<meta charset="UTF-8" />
-		<title>gerrit</title>
+		<title>SpaceX Clock</title>
 		<link type="text/css" href="styles/my_style.css" rel="stylesheet" />
-		<script type="text/javascript" src="scripts/jquery-1.9.1.min.js"></script>
-		<script type="text/javascript" src="scripts/my_scripts.js"></script>
+		<link rel="stylesheet" href="https://use.typekit.net/nvj2qtm.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Grotesk&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="scripts/my_scripts.js"defer></script>
 	</head>
 	<body>
-		<section id="woonkamer">
-			<img id="background" src="images/background.jpg" />
-			<img id="gerrit" src="images/gerrit.png" />
-		</section>
-		<p>Spongebob Squarepants, Nickelodeon Animation Studios 1999</p>
+		<div id="clock">
+			<img src="images/logo.png">
+			<h2>Dear new Martians <br/> your time in <div id="year">0</div> is</h2>
+			<div id="time">
+				<div id="hours">0</div>
+				<div id="minutes">0</div>
+				<div id="seconds">0</div>
+			</div>	
 	</body>
 </html>

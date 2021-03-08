@@ -1,18 +1,26 @@
-$(document).ready(function(){
+var today = new Date();
 
-	kruip();
+function addLeadingZero(getal) {
+	if(getal < 10){
+		getal = '0' + getal;
+	}
 
-});
-
-function kruip(){
-	$("#gerrit").animate({
-				  	left: "+=10px",
-				  	width: "210px"
-			  	}, 600)
-				.animate({
-					left: "+=10px",
-				  	width: "200px"
-			  	}, 600);
-
-	setTimeout("kruip()", 1200);
+	return getal;
 }
+
+document.getElementById('hours').innerHTML = today.getHours();
+document.getElementById('minutes').innerHTML= addLeadingZero(today.getMinutes());
+document.getElementById('seconds').innerHTML= addLeadingZero(today.getSeconds());
+document.getElementById('year').innerHTML= addLeadingZero(today.getFullYear());
+
+
+// var seconds = 0;
+
+// function count(){
+// 	seconds++;
+// 	document.getElementById('seconds').innerHTML=seconds;
+// }
+
+// setInterval(count, 1000);
+
+// count();
