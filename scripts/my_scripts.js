@@ -33,19 +33,23 @@ var interval= setInterval(clock, 1000);
 
 var currentTime = today.getHours();
 	if (currentTime < 6){
-		document.body.background= 'images/nightime.png';
+		document.body.style.backgroundImage = "url('images/nightime.png')";
+		document.getElementById('cloud').style.opacity = "0.1";
+		// document.body.background= 'images/nightime.png';
 		// console.log('nacht');
 	}
 	else if (currentTime < 12){
-		document.body.background= 'images/daylight.png';
+		document.body.style.backgroundImage = "url('images/daylight.png')";
 		// console.log('ochtend');
 	}
 	else if (currentTime < 18) {
-		document.body.background= 'images/daylight.png';
+		document.body.style.backgroundImage = "url('images/daylight.png')";
 		// console.log('middag');	
 	}
 	else {
-		document.body.background= 'images/nightime.png';
+		document.body.style.backgroundImage = "url('images/nightime.png')";
+		document.getElementById('cloud').style.opacity = "0.2";
+		document.getElementById('clock').style.background = "#231d3a";
 		// console.log('avond');
 	}	
 
