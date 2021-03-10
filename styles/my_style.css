@@ -40,7 +40,7 @@ body{
 
 #year {
 	font-family: 'pirulen';
-    padding-top: 8px;
+    padding-top: 5px;
     font-size: 30pt;
 
 }
@@ -65,3 +65,39 @@ body{
 	justify-content: center;
 	align-items: center;
 }
+
+.clouds {
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	pointer-events: none;
+	z-index: -1;
+	opacity: 75%;
+}
+
+.clouds img {
+	position: absolute;
+	bottom:0;
+	max-width: 100%;
+	animation: animate calc(3s*var(--i)) linear infinite;
+}
+
+@keyframes animate {
+	0%{
+		opacity: 0;
+		transform:scale(1);
+	}
+
+	25%,75%{
+		opacity:1;
+	}
+
+	100% {
+		opacity: 0;
+		transform: scale(6);
+	}
+}
+
