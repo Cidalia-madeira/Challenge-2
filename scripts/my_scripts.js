@@ -35,6 +35,7 @@ var currentTime = today.getHours();
 	if (currentTime < 6){
 		document.body.style.backgroundImage = "url('images/nightime.png')";
 		document.getElementById('cloud').style.opacity = "0.1";
+		document.getElementById('clock').style.background = "#231d3a";
 		// document.body.background= 'images/nightime.png';
 		// console.log('nacht');
 	}
